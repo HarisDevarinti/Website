@@ -1,0 +1,121 @@
+<!-- inner header wrapper start -->
+<div class="page_title_section float_left">
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+                <!-- section_heading start -->
+                <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                    <h1 style="float: left;">blog </h1>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                    <div class="sub_title_section" style="float: left;">
+                        <ul class="sub_title">
+                            <li> <a href="#"> Home </a> &nbsp;&nbsp;&nbsp; &gt; &nbsp;&nbsp;</li>
+                            <li>blog </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- inner header wrapper end -->
+<!--blog wrapper start-->
+<div class="blog_wrapper float_left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog-post-wrapper iner_blog">
+                    <div class="post-thumbnail">
+                        <img style="height: 400px;
+                        object-fit: cover;" src="{{firstdata.blog_img}}" class="img-responsive " alt="Image">
+                    </div>
+                    <!-- /.post-thumbnail -->
+                    <div class="blog-content">
+                        <header class="entry-header">
+                            <div class="entry-meta">
+
+                            </div>
+                            <!-- /.entry-meta -->
+                            <h4 class="entry-title"><a href="#">{{firstdata.heading}}</a></h4>
+                        </header>
+                        <!-- /.entry-header -->
+                        <div class="entry-content">
+                            <p>{{firstdata.blog_para1}}
+                                <br>
+                            </p>
+                        </div>
+                        <br>
+                        <!-- /.blog-content -->
+                        <div class="entry-content">
+                            <p>{{firstdata.blog_para2}}
+                                <br>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="entry-content">
+                            <p>{{firstdata.blog_para3}}
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+
+                   
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="edu_partner_main_wrapper float_left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="edu_heading_wrapper float_left">
+                        <h3>OUR Blog</h3>
+                        <p>"Explore the future with eKnowledgeHub's blogs! Uncover educational insights and 
+                            stay ahead of<br> software and digital marketing trends. Empower your knowledge journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="partners_slider_wrapper">
+                        <div class="owl-carousel owl-theme">
+                            <!-- <div class="item" *ngFor="let i of blogdata">
+                                <div class="lr_prt_img_wrapper">
+                                    <img src="assets/images/blog_01.jpg" alt="partner_img">
+                                </div>
+                                <div class="edu_blog_img_content_wrapper float_left">
+                                    <p>{{i.mini_blog_content}}</p>
+                                    
+                                </div>
+                            </div> -->
+                            <div *ngFor="let i of blogdata" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 item" style="max-width: 100%;padding: 0px;">
+                                <div class="edu_blog_main_box float_left" (click)="blogsing(i)">
+                                    <div class="edu_blog_label">
+                                        <p>Latest</p>
+                                    </div>
+                                    <div class="edu_blog_date float_left">
+                                    </div>
+                                    <div class="edu_blog_img_wrapper float_left">
+                                        <img src="{{i.mini_blog_img}}" alt="img">
+                                    </div>
+                                    <div class="edu_blog_img_content_wrapper float_left">
+                                        <p>{{i.mini_blog_content}}</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog wrapper end-->
+
+    
